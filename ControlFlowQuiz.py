@@ -15,8 +15,21 @@ for key, values in nominated.items():
         if values[0] in values:
             sum += values.count(values[0])
             nom_count_dict[values[0]] = sum
-print(nom_count_dict)
-    #print("Movie directior {} has been nominated {} times".format(values[0], sum))
+#print("nom_count_dict = {}\n".format(nom_count_dict))
+
+win_count_dict = {}
+
+for key, values in winners.items():
+    sum = 0
+    x = 0
+    while x <= len(values):
+        x += 1
     # print(values[0])
+        if values[0] in values:
+            sum += values.count(values[0])
+            win_count_dict[values[0]] = sum
+print("nom_count_dict = {}\n".format(win_count_dict))
+#print("Movie directior {} has been nominated {} times".format(values[0], sum))
+# print(values[0])
 
 # print(nominated)
